@@ -1,11 +1,16 @@
-import java.util.Scanner;
-
 public class ResultadoEscolar {
 
     public static void main(String[] args) {
+        int nota = 6;
 
-        Scanner scanner = new Scanner(System.in);
+        if (nota >= 7)
+            System.out.println("Aprovado");
 
-        scanner.close();
+        else if (nota >= 5 && nota < 7)
+            System.out.println("Prova de recuperação");
+
+        else
+            System.out.println("Reprovado");
+
     }
 }
